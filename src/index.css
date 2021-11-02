@@ -18,3 +18,13 @@ body {
   z-index: -1;
 
 }
+
+.map-container {
+  height: 100vh;
+  width: 100vh;
+}
+
+.iss-icon {
+  width: 40px;
+  height: 40px;
+}

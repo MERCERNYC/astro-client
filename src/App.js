@@ -1,7 +1,7 @@
-import './App.css';
 import Navbar from './components/Navbar/Navbar'
 import Astronauts from './components/Astronauts/Astronauts'
-import Home from './components/Home/Home'
+import IssLocation from './components/IssLocation/IssLocation'
+import Profile from './components/Profile/Profile'
 import Signin from './components/Signin/Signin'
 import ParticleBackground from './ParticleBackground';
 
@@ -13,9 +13,9 @@ function App() {
     <ParticleBackground />
      <Navbar />
      <Astronauts />
-     <Home />
+     <Profile />
      <Signin />
-     {/* <ISS /> */}     
+     <IssLocation />     
     </div>
   );
 }

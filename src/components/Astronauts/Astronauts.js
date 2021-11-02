@@ -1,5 +1,5 @@
 import AstronautList from "./AstronautsList";
-import { useState,useEffect } from 'react'
+import { useState,useEffect } from 'react';
 
 
 const Astronauts= () => {
@@ -9,8 +9,7 @@ const Astronauts= () => {
   useEffect(() => {
     fetch('http://api.open-notify.org/astros.json')
       .then((res) => res.json())
-      .then((data) => {setAstronauts(data.people) 
-    })
+      .then((data) => {setAstronauts(data.people)})
       .catch(err => {console.log(err.message)})
 
   }, []);
