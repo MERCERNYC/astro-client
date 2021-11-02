@@ -3,7 +3,7 @@ const  Navbar= () => {
         <nav className='navbar'>
           <h1>Astro</h1>
           <div className='links'>
-              <a href="/">Logout</a>
+              <a href="/">Home</a>
               <a href="/Astronauts">Astronauts</a>
               <a href="/ISS Location">ISS Location</a>
 
