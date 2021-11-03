@@ -27,9 +27,7 @@ const IssLocation= () => {
         <div className="Iss Tracker">
           <h3>ISS Tracker</h3>
           {!loading ? (
-
-               <Map center={{ lat:latitude, lng: longitude}}/>
-           
+               <Map center={{ lat:latitude, lng: longitude}}/>   
             ) : ( <h1>loading</h1>
             )}
         </div>

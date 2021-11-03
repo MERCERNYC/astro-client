@@ -15,7 +15,7 @@ const  Map= ({center, zoom}) => {
           <img 
             className='iss-icon'
             src={iss} 
-            alt='iss icon' 
+            alt='iss icon'  
             lat={center.lat }
             lng={center.lng}  
           />  
