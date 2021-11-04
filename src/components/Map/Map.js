@@ -1,14 +1,15 @@
-import GoogleMapReact from "google-map-react";
+import GoogleMapReact from 'google-map-react';
 import iss from './iss.png';
 
 
 const  Map= ({center, zoom}) => {
   
+
     return ( 
        <div className='map-container'>Map
         <GoogleMapReact
           bootstrapURLKeys={process.env.REACT_APP_MAP_KEY }
-          defaultCenter={center}
+          center={center}
           defaultZoom={zoom}
           
         >
@@ -27,8 +28,8 @@ const  Map= ({center, zoom}) => {
 
 Map.defaultProps = {
   center: {
-    lat: 12.5074,
-    lng: 0.1278,
+    lat: 59.95,
+    lng: 30.33
 },
 zoom: 4
 }

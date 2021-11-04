@@ -1,6 +1,6 @@
 import PropTypes from 'prop-types';
 import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 
 
 async function loginUser(credentials) {
@@ -45,7 +45,7 @@ async function loginUser(credentials) {
                    
                     </fieldset>
                     <div className="">
-                    <input as={Link} to='/Profile' className="b ph3 pv2 input-reset ba b--white bg-transparent grow pointer f6 dib" type="submit" value="Sign in"/>
+                    <input onClick={() => {NavLink("/Login")}}className="b ph3 pv2 input-reset ba b--white bg-transparent grow pointer f6 dib" type="submit" value="Sign in"/>
                     </div>
                     <div className="lh-copy mt3">
                     <a href="#0" className="f6 link dim white db">Register</a>

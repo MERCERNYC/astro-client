@@ -3,7 +3,7 @@ import Astronauts from './components/Astronauts/Astronauts'
 import IssLocation from './components/IssLocation/IssLocation'
 import Profile from './components/Profile/Profile'
 import Login from './components/Login/Login'
-// import ParticleBackground from './ParticleBackground';
+import ParticleBackground from './ParticleBackground';
 import { Route, Switch } from 'react-router-dom';
 import React, { useState } from 'react';
 import UseToken from './components/UseToken/UseToken';
@@ -30,22 +30,22 @@ function App() {
 
   return (
     <div className="App">
-      {/* <ParticleBackground /> */}
+      <ParticleBackground />
         <Navbar />
-          <Switch>
-            <Route exact path='/' component={Login}>
+          {/* <Switch> */}
+            {/* <Route exact path='/' component={Login}> */}
                <Login setToken={setToken}/>
-            </Route>
-            <Route exact path='/astronauts'component={Astronauts} >
+            {/* </Route> */}
+            {/* <Route exact path='/astronauts'component={Astronauts} > */}
               <Astronauts />
-            </Route>  
-            <Route exact path='/profile' component={Profile}>
+            {/* </Route>   */}
+            {/* <Route exact path='/profile' component={Profile}> */}
               <Profile />
-            </Route>  
-            <Route exact path='/ ' component={IssLocation}>
+            {/* </Route>   */}
+            {/* <Route exact path='/issLocation ' component={IssLocation}> */}
                <IssLocation />  
-            </Route>
-          </Switch>     
+            {/* </Route>
+          </Switch>      */}
     </div>
   );
 }
