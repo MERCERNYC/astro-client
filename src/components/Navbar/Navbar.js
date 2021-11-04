@@ -7,7 +7,8 @@ const  Navbar= () => {
                <h1>Astro</h1>
             </a>
             <div class="dtc v-mid w-75 tr">
-                <a as={Link} to='/IssLocation' class="link dim white f6 f5-ns dib mr3 mr4-ns" href="#" title="About">ISS Location</a>
+    
+                <Link to='/IssLocation' class="link dim white f6 f5-ns dib mr3 mr4-ns" href="#" title="About">ISS Location</Link>
                 <a as={Link} to='/Astronauts' class="link dim white f6 f5-ns dib mr3 mr4-ns" href="#" title="Store">Astronauts</a>
                 <a as={Link} to='/Login' class="link dim white f6 f5-ns dib" href="#" title="Contact">Sign out</a>
             </div>     

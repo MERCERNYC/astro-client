@@ -8,7 +8,7 @@ const  Map= ({center, zoom}) => {
     return ( 
        <div className='map-container'>Map
         <GoogleMapReact
-          bootstrapURLKeys={process.env.REACT_APP_MAP_KEY }
+          googleMapsApiKey = {process.env.REACT_APP_API_KEY}
           center={center}
           defaultZoom={zoom}
           
