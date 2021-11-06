@@ -6,15 +6,14 @@ const  Map= ({center, zoom}) => {
   
 
     return ( 
-       <div className='map-container'>Map
+       <div className='map-container'>
         <GoogleMapReact
-          googleMapsApiKey = {process.env.REACT_APP_API_KEY}
+          bootstrapURLKeys = {process.env.REACT_APP_API_KEY}
           center={center}
           defaultZoom={zoom}
           
         >
-          <img 
-            className='iss-icon'
+          <img style={{ height: '100vh', width: '100%' }}
             src={iss} 
             alt='iss icon'  
             lat={center.lat }
